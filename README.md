@@ -25,6 +25,10 @@ Similarly, using an unsorted array or linked list would result in O(n) complexit
 
 In contrast, AVL trees ensure O(log n) complexity for insertion, deletion, and lookup operations, providing a significant performance advantage, particularly for applications with a large and dynamic dataset like an event scheduler.
 
+## Exception Handling and Data Preservation
+
+The application employs a try...except mechanism to handle unexpected terminations. User inputs are read in a loop, and in case of an abrupt closure or an input error, the application catches the exception. This triggers the immediate saving of the current state of events to a file, followed by a graceful termination of the program. This feature ensures that your event data is not lost, even if the program exits unexpectedly, providing additional reliability to the application's operation.
+
 ## Getting Started
 
 To use the application, simply run `python main.py` and follow the CLI prompts to add, remove, list events, or exit the application.
