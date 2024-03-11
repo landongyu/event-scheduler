@@ -4,10 +4,11 @@ This Event Scheduler is a command-line interface (CLI) application that allows u
 
 ## Features
 
-- **Add Event**: Users can add new events with a title, date, and description.
+- **Add Event**: Users can add new events with a title, date, and description. If an event with the same title is added, it will replace the existing event.
 - **Remove Event**: Users can remove events based on their title.
-- **List Events**: Users can list all scheduled events in a sorted manner.
+- **List Events**: Users can list all scheduled events in a sorted manner, ordered by date (which is Implemented by AVL tree).
 - **Exit**: Users can exit the application.
+- **Optional Description**: While adding an event, providing a description is optional.
 
 ## Why Use AVL Tree?
 
